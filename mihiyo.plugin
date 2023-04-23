@@ -1,5 +1,7 @@
 #!name=米游社小助手
 #!desc=主要用于米游社米游币任务和游戏(原神、崩坏3rd)签到的自动运行
+#!author= @kayanouriko
+#!homepage= https://github.com/kayanouriko/quantumultx-mihoyobbs-auto-helper
 #!icon=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/assets/gallery-icon.png
 
 [Script]
