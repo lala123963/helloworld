@@ -8,24 +8,24 @@
     {
       "id": "mihiyo",
       "name": "米游社小助手",
-      "key": [],
+      "key": ["kayanouriko_mihoyobbs_headers_bbs","kayanouriko_mihoyobbs_headers_sign"],
       "descs_html": [
         "<h4 align=\"center\">打开米游社，此时会弹出第一条获取成功的通知，再随便打开一个游戏的签到页面，会收到第二条获取成功的通知.</a></h4>"
       ],
       "settings": [
         {
-          "id": "procuratorate_cookie",
-          "name": "签到cookie",
+          "id": "kayanouriko_mihoyobbs_headers_bbs",
+          "name": "米游社任务cookie",
           "val": "",
           "type": "text",
-          "desc": "上班打卡验证信息"
+          "desc": "打开米游社，获取第一条cookie"
         },
         {
-          "id": "procuratorate_body",
-          "name": "签到body",
+          "id": "kayanouriko_mihoyobbs_headers_sign",
+          "name": "米游社签到cookie",
           "val": "",
-          "type": "textarea",
-          "desc": "上班打卡请求体"
+          "type": "text",
+          "desc": "随便打开一个游戏的签到页面，获取cookie"
         }
       ],
       "author": "@kayanouriko",
