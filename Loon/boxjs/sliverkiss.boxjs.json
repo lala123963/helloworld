@@ -2,7 +2,7 @@
   "id": "sliverkiss.sub",
   "name": "sliverkiss 脚本订阅",
   "author": "@sliverkiss",
-  "icon": "https://github.com/Sliverkiss/helloworld/Loon/icon/sliverkiss.png",
+  "icon": "https://raw.githubusercontent.com/Sliverkiss/helloworld/Loon/icon/sliverkiss.png",
   "repo": "https://github.com/Sliverkiss/helloworld.git",
   "apps": [
     {
