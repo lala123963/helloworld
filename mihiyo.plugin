@@ -1,0 +1,19 @@
+#!name=米游社小助手
+#!desc=主要用于米游社米游币任务和游戏(原神、崩坏3rd)签到的自动运行
+#!icon=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/assets/gallery-icon.png
+
+[Script]
+#米游社任务运行
+cron "2 0 * * *" script-path=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/src/mihoyobbs-auto-helper.js, enabled=true, tag=米游社任务
+# 获取米游币任务功能需要的 cookie
+http-request ^https://bbs-api.mihoyo.com/apihub/api/getGameList script-path=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/src/mihoyobbs.cookie.js, timeout=60 ,tag=mihoyobbs.cookie_9
+
+# 获取签到功能需要的 cookie
+http-request ^https://api-takumi.mihoyo.com/binding/api/getUserGameRoles script-path=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/src/mihoyobbs.cookie.js, timeout=60 ,tag=mihoyobbs.cookie_11
+
+# 脚本设置自定义
+http-request ^https://example.com/? script-path=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/src/mihoyobbs.config.js, timeout=60 ,tag=mihoyobbs.config_13
+
+[MITM]
+
+hostname = bbs-api.mihoyo.com,api-takumi.mihoyo.com,example.com
