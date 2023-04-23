@@ -1,8 +1,8 @@
 #!name=贤者模式
 #!desc=别问，问就是学习
-#!author= @kayanouriko
-#!homepage= https://github.com/kayanouriko/quantumultx-mihoyobbs-auto-helper
-#!icon=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/assets/gallery-icon.png
+#!author= @Hausd0rff
+#!homepage= https://github.com/yqc007/QuantumultX
+#!icon=https://github.com/KeiKinn/StickerOnScreen/raw/main/Stickers/Sticker_1131.png
 
 [Rewrite]
 ^https?:\/\/.*\/(common\/splash_config|m_user\/(check_phone|behavior_verification_code)) - reject-200
