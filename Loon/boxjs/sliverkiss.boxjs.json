@@ -6,7 +6,7 @@
   "repo": "https://github.com/Sliverkiss/helloworld.git",
   "apps": [
     {
-      "id": "Procuratorate",
+      "id": "mihiyo",
       "name": "米游社小助手",
       "key": [],
       "descs_html": [
@@ -32,6 +32,7 @@
       "repo": "https://github.com/kayanouriko/quantumultx-mihoyobbs-auto-helper",
       "script": "https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/src/mihoyobbs-auto-helper.js",
       "icons": [
+        "https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/assets/gallery-icon.png",
         "https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/assets/gallery-icon.png"
       ]
     },
