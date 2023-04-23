@@ -2,7 +2,7 @@
   "id": "sliverkiss.sub",
   "name": "sliverkiss 脚本订阅",
   "author": "@sliverkiss",
-  "icon": "https://avatars.githubusercontent.com/u/70052878?s=96&v=4",
+  "icon": "https://github.com/Sliverkiss/helloworld/Loon/icon/sliverkiss.png",
   "repo": "https://github.com/Sliverkiss/helloworld.git",
   "apps": [
     {
@@ -13,13 +13,6 @@
         "<h4 align=\"center\">打开米游社，此时会弹出第一条获取成功的通知，再随便打开一个游戏的签到页面，会收到第二条获取成功的通知.</a></h4>"
       ],
       "settings": [
-        {
-          "id": "procuratorate_fast",
-          "name": "快速签到",
-          "val": false,
-          "type": "boolean",
-          "desc": "不管今天是否上班, 都进行打卡(默认关闭)"
-        },
         {
           "id": "procuratorate_cookie",
           "name": "签到cookie",
@@ -116,29 +109,6 @@
       "icons": [
         "https://raw.githubusercontent.com/chiupam/surge/main/boxjs/icon/zsfc.jpeg",
         "https://raw.githubusercontent.com/chiupam/surge/main/boxjs/icon/zsfc.jpeg"
-      ]
-    },
-    {
-      "id": "wskey",
-      "name": "京东值",
-      "key": [],
-      "descs_html": [
-        "<h4 align=\"center\">打开京东, 点击右上角消息</a></h4>"
-      ],
-      "settings": [
-        {
-          "id": "jd_wskey",
-          "name": "抓取到 wskey 的具体值",
-          "val": "pin=xxxxxx;wskey=xxxxxx;",
-          "type": "textarea",
-          "desc": "复制它吧"
-        }
-      ],
-      "author": "@chiupam",
-      "repo": "https://github.com/chiupam/surge",
-      "icons": [
-        "https://raw.githubusercontent.com/chiupam/surge/main/boxjs/icon/jd.jpeg",
-        "https://raw.githubusercontent.com/chiupam/surge/main/boxjs/icon/jd.jpeg"
       ]
     },
     {

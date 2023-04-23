@@ -4,6 +4,14 @@
 #!homepage= https://github.com/kayanouriko/quantumultx-mihoyobbs-auto-helper
 #!icon=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/assets/gallery-icon.png
 
+#由于米哈游修改了bbs可以获取的cookie，导致米游币任务功能需要的cookie缺失，所以需要添加步骤
+#1、打开safari浏览器，进入无痕模式
+#2、打开http://bbs.mihoyo.com/输入ys并进行登入操作
+#3、再上一步登入完成后新建标签页，打开http://user.mihoyo.com并进行登入操作
+#4、按下键盘上的F12或右键检查，打开开发者工具，点击console
+#5、var cookie=document.cookie;var ask=confirm('Cookie:'+cookie+'\n\n确定是否将cookie复制到剪贴板?');if(ask==true){copy(cookie);msg=cookie}else{msg='取消'}
+#6、将复制到粘贴板的cookie填入到环境变量中
+
 [Script]
 #米游社任务运行
 cron "2 0 * * *" script-path=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/src/mihoyobbs-auto-helper.js, enabled=true, tag=米游社任务
