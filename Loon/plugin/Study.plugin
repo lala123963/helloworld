@@ -11,7 +11,9 @@
 ^https?:\/\/ts1i\.dk\.y8848\.xyz\/app\/api\/(sms\/send|user\/bindphone) - reject-200
 # > 蜜桃视频解锁无限次数
 \/t\w{4}\/\d\/t\/ /token/5d10208372cbd649de04b9731c1b55db/t/ 307
+^https?:\/\/(time\.tfbeta\.top\/api\/app\/info|api\..+\/api\/(vip\/newshow|banner\/show|version\/show\/1))$ - reject-200
 
+^https?:\/\/sjapp\.o3aqqc\.work\/(home\/message\/get|user\/getUserActivity|activityDialog\/getActivityDialogList|banner\/list2\?location=0|game\/programGameList) - reject-200
 
 [Script]
 # > 69传媒解锁会员
@@ -62,6 +64,33 @@ http-request ^https?:\/\/.*mt.*\.com\/api\/Video\/m3u8\/id.+ script-path=https:/
 # > 蛋啵解锁永久会员
 http-response ^https?:\/\/api-sub\.meitu\.com\/v2\/user\/vip_info_by_group\.json script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/MeiTuBabyVipCrack.js, requires-body=true, timeout=60 ,tag=MeiTuBabyVipCrack_12
 
+# 新春水堂解锁会员
+http-response ^https?:\/\/api\.(sumsun|gzbbcg|kjregister|klettdayeare)\.\w{3}\/api\/user\/profile\/$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/NCSTCrack.js, requires-body=true, timeout=60 ,tag=NCSTCrack_17
+
+# > 水蜜桃解锁会员
+http-response ^https?:\/\/api\.mtaoapi006\.\w{3,4}:\d{4}\/api\.php\/api\/users\/getBaseInfo script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PeachCrack.js, requires-body=true, timeout=60 ,tag=PeachCrack_15
+
+# > PornHub Unlock Premium By Hausd0rff
+http-request ^https?:\/\/cn\.pornhubpremium\.com\/ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornHubPremiumCrack.js, timeout=60 ,tag=PornHubPremiumCrack_13
+
+# > 欲漫涩解锁会员视频
+http-request ^https?:\/\/.*\.com\/api\/app\/media script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/PornVideosCrack.js, timeout=60 ,tag=PornVideosCrack_13
+
+# > 色界视频解锁会员
+http-response ^https?:\/\/sjapp\.o3aqqc\.work\/user\/(info|fansAndUpAndAttentionCnt)$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/SJSPCrack.js, requires-body=true, timeout=60 ,tag=SJSPCrack_14
+
+http-request ^https?:\/\/sjapp\.o3aqqc\.work\/mov\/browse script-path=https://raw.githubusercontent.com/xream/scripts/main/surge/modules/replace-header/index.js, timeout=60, tag=replaceHeader_15, argument="(\r\n)Authorization:.+(\r\n)->$1Authorization: 0547064bb9a5557d332023ab513a2e3784e38dc54f844f53cbb804d3a687c48b6c2e670c6aba3e564f$2"
+
+# 硬汉视频解锁会员
+http-request ^https?:\/\/apiw\.sshfax\.com\/sw1\/.+ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/YHSPCrack.js, timeout=60 ,tag=YHSPCrack_17
+
+http-response ^https?:\/\/apiw\.sshfax\.com\/sw1\/login$ script-path=https://gitlab.com/lodepuly/vpn_tool/-/raw/main/Resource/Script/CommonScript/replace-body.js, requires-body=true, timeout=60 ,tag=replaceBody_18, argument="token": "(.*?)"->token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJtZW1iZXJfaWQiOiJJTjE3NzMyOTAiLCJkZXZpY2VfaWQiOiIwNDNENkRGMi1CODVGLTQ1OUUtQjZEMC03NTBGMjI2RTMyRkQiLCJlbWFpbCI6IjEwOTQzODA1MzFAcXEuY29tIiwiZXhwIjoxNjQwMzQyMzIwfQ.q_V8EUpxdIjVcoW2wHof9tIPA1Lv0_Y8uMdTO-A3N6E""
+
+# > 鱿鱼视频解锁会员
+http-response ^https?:\/\/api\.youyu.*\/api\/account\/loginBy(Phone|Password)$ script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/YYSPCrack.js, requires-body=true, timeout=60 ,tag=YYSPCrack_15
+
+# > 麻豆社区解锁全部视频
+http-request ^https?:\/\/.*\/api\/app\/media\/m3u8\/.*\.m3u8 script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/mdsqallcrack.js, timeout=60 ,tag=mdsqallcrack_13
 
 [MITM]
-hostname = www.91gao1.com,tu5.twittme.net,app.weilaixushi.com,api.orientlion.com,app.qdjdswkj.com,api.0954auto.com,appapi.xmblgg.com,api.czbt.cc,api.jtshuzhiwa.com,appapi.17gwl.com,api.saiyijiaju.com,api.ddoukids.com,appapi.mnghx.info,appapi.zdxclr.com，*.91api*,chvtv.xcsxchen.xyz,oqxv.8r09phi.com,iwx68v.8gbhr.com,s.*.com,o0o0plpl11.xinai99.com,etryj.avjfph.com,zhfvd.rjxxqf.com,ryuhf.jmzkwt.com,ovhdo.cjppdp.com,api.gygarden.cn,api.xminiapp.cn,api.petsbang.cn,api.yngenji.cn,api.*.cn,*.chuniao.*,ts1i.dk.y8848.xyz,api.(md-ddd1|yh-bzd).com,*mt*.com,api-sub.meitu.com
+hostname = www.91gao1.com,tu5.twittme.net,app.weilaixushi.com,api.orientlion.com,app.qdjdswkj.com,api.0954auto.com,appapi.xmblgg.com,api.czbt.cc,api.jtshuzhiwa.com,appapi.17gwl.com,api.saiyijiaju.com,api.ddoukids.com,appapi.mnghx.info,appapi.zdxclr.com，*.91api*,chvtv.xcsxchen.xyz,oqxv.8r09phi.com,iwx68v.8gbhr.com,s.*.com,o0o0plpl11.xinai99.com,etryj.avjfph.com,zhfvd.rjxxqf.com,ryuhf.jmzkwt.com,ovhdo.cjppdp.com,api.gygarden.cn,api.xminiapp.cn,api.petsbang.cn,api.yngenji.cn,api.*.cn,*.chuniao.*,ts1i.dk.y8848.xyz,api.(md-ddd1|yh-bzd).com,*mt*.com,api-sub.meitu.com,api.sumsun.top,api.gzbbcg.com,api.kjregister.com,api.klettdayeare.com,*.mtaoapi*,cn.pornhubpremium.com,zjgeo.eqobc.com,xnour.xonap.com,opzzy.kefsww.com,tqrbq.mpckv.com,sjapp.o3aqqc.work,apiw.sshfax.com,*.youyu*,ypmnkbb.saejeuj.com,fufxtyc.bytebwq.com,lcbnejx.dirptev.com,gcyivjc.qrneryt.com
