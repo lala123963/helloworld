@@ -19,3 +19,4 @@ http-request ^https://example.com/? script-path=https://raw.githubusercontent.co
 [MITM]
 
 hostname = bbs-api.mihoyo.com,api-takumi.mihoyo.com,example.com
+
