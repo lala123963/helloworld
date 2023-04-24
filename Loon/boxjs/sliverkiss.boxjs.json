@@ -36,7 +36,7 @@
           "desc": "随便打开一个游戏的签到页面，获取cookie"
         },
         {
-          "id": "kayanouriko_mihoyobbs_headers_sign",
+          "id": "kayanouriko_mihoyobbs_config",
           "name": "米游社任务设置自定义",
           "val": "",
           "type": "text",
