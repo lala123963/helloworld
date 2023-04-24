@@ -1,8 +1,8 @@
 #!name=北京现代
 #!desc=主要用于北京现代签到和日常任务的自动运行
-#!homepage=
+#!homepage=https://ithub.com/leafTheFish/DeathNote
 #!author=@leafTheFish
-#!icon=https://ithub.com/leafTheFish/DeathNote
+#!icon=
 
 [Script]
 
