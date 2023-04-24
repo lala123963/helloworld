@@ -1,0 +1,110 @@
+
+hjavascript:S9053"FExpected an assignment or function call and instead saw an expression.(æ÷‚’8’É®ñú0
+ijavascript:S6019D"FFix this reluctant quantifier that will only ever match 0 repetitions.(ŒèÄ·8”É®ñú0
+ijavascript:S6019F"FFix this reluctant quantifier that will only ever match 0 repetitions.(è´Û´8•É®ñú0
+}javascript:S3776„"TRefactor this function to reduce its Cognitive Complexity from 17 to the 15 allowed.(¤±Šïùÿÿÿÿ8»É®ñú0
+_javascript:S930Ò"7This function expects no arguments, but 1 was provided.(à¶ü®ûÿÿÿÿ8¿É®ñú0
+Wjavascript:S1135Ô"4Complete the task associated to this "TODO" comment.(û¾Æu8ÁÉ®ñú0
+Yjavascript:S1186ú"0Unexpected empty async function 'handleOptions'.(âÖ¾òûÿÿÿÿ8ÈÉ®ñú0
+mjavascript:S3358 "DExtract this nested ternary operation into an independent statement.(ç›ğäüÿÿÿÿ8Úæ®ñú0
+mjavascript:S3358 "DExtract this nested ternary operation into an independent statement.(ç›ğäüÿÿÿÿ8Üæ®ñú0
+mjavascript:S3358 "DExtract this nested ternary operation into an independent statement.(ç›ğäüÿÿÿÿ8Şæ®ñú0
+mjavascript:S3358 "DExtract this nested ternary operation into an independent statement.(ç›ğäüÿÿÿÿ8àæ®ñú0
+]javascript:S1135å"4Complete the task associated to this "TODO" comment.(¯†¸ıÿÿÿÿ8äæ®ñú0
+djavascript:S6353ş";Use concise character class syntax '\d' instead of '[0-9]'.(ü¦¨Õúÿÿÿÿ8çæ®ñú0
+‚javascript:S2703"^Add the "let", "const" or "var" keyword to this declaration of "$request" to make it explicit.(Ü­í²8éæ®ñú0
+javascript:S4144×"XUpdate this function so that its implementation is not identical to the one on line 973.(Ó••úÿÿÿÿ8îæ®ñú0
+xjavascript:S3776æ"TRefactor this function to reduce its Cognitive Complexity from 38 to the 15 allowed.(ã£¿¡8öæ®ñú0
+\javascript:S1121î"3Extract the assignment of "i" from this expression.(Òï²ÿûÿÿÿÿ8÷æ®ñú0
+Vjavascript:S1121ï"3Extract the assignment of "i" from this expression.(¢«©8÷æ®ñú0
+Ijavascript:S878õ"!Unexpected use of comma operator.(áïäÿÿÿÿÿ8øæ®ñú0
+Ijavascript:S878û"!Unexpected use of comma operator.(óûõäúÿÿÿÿ8ùæ®ñú0
+Djavascript:S878ı"!Unexpected use of comma operator.(‹íÉ¦8úæ®ñú0
+Djavascript:S878ş"!Unexpected use of comma operator.(¨ïÕÑ8ûæ®ñú0
+Cjavascript:S878”"!Unexpected use of comma operator.(¬²“M8ûæ®ñú0
+Ijavascript:S878§"!Unexpected use of comma operator.(Ñı£ÿÿÿÿÿ8üæ®ñú0
+Ijavascript:S878­"!Unexpected use of comma operator.(İîÁğùÿÿÿÿ8şæ®ñú0
+hjavascript:S101»"ERename class "s" to match the regular expression ^[A-Z][a-zA-Z0-9]*$.(¿¦Ïı8ÿæ®ñú0
+Cjavascript:S878Ã"!Unexpected use of comma operator.(Æ’_8€ç®ñú0
+ijavascript:S905Õ"FExpected an assignment or function call and instead saw an expression.(Šô‚¢8‚ç®ñú0
+Djavascript:S878Õ"!Unexpected use of comma operator.(Šô‚¢8…ç®ñú0
+Ijavascript:S878	"!Unexpected use of comma operator.(ÈøÆøÿÿÿÿ8‡ç®ñú0
+Ijavascript:S878ª	"!Unexpected use of comma operator.(‡áÑøÿÿÿÿ8Šç®ñú0
+Ijavascript:S878»	"!Unexpected use of comma operator.(‡áÑøÿÿÿÿ8Œç®ñú0
+hjavascript:S3358¾	"DExtract this nested ternary operation into an independent statement.(×‚ìƒ8ç®ñú0
+Ijavascript:S878Å	"!Unexpected use of comma operator.(¼º°×ûÿÿÿÿ8‘ç®ñú0
+Zjavascript:S1121Ê	"6Extract the assignment of "t[s]" from this expression.(½Ì‹Â8“ç®ñú0
+hjavascript:S3358Ê	"DExtract this nested ternary operation into an independent statement.(½Ì‹Â8–ç®ñú0
+mjavascript:S3358ß	"DExtract this nested ternary operation into an independent statement.(‚ˆßÖÿÿÿÿÿ8˜ç®ñú0
+Djavascript:S878â	"!Unexpected use of comma operator.(ô¼Îÿ8šç®ñú0
+Djavascript:S878å	"!Unexpected use of comma operator.(½ÇÓŠ8œç®ñú0
+mjavascript:S3358ì	"DExtract this nested ternary operation into an independent statement.(’™Åøÿÿÿÿ8ç®ñú0
+mjavascript:S3358ì	"DExtract this nested ternary operation into an independent statement.(’™Åøÿÿÿÿ8¡ç®ñú0
+mjavascript:S3358ğ	"DExtract this nested ternary operation into an independent statement.(ö«ÈÆüÿÿÿÿ8¢ç®ñú0
+mjavascript:S3358ğ	"DExtract this nested ternary operation into an independent statement.(ö«ÈÆüÿÿÿÿ8£ç®ñú0
+ijavascript:S905ô	"FExpected an assignment or function call and instead saw an expression.(ŸëŒş8£ç®ñú0
+Djavascript:S878ô	"!Unexpected use of comma operator.(ŸëŒş8¤ç®ñú0
+}javascript:S3776÷	"TRefactor this function to reduce its Cognitive Complexity from 18 to the 15 allowed.(Òââıÿÿÿÿ8¦ç®ñú0
+Ijavascript:S878ù	"!Unexpected use of comma operator.(£ÓòÛıÿÿÿÿ8¨ç®ñú0
+njavascript:S905ù	"FExpected an assignment or function call and instead saw an expression.(£ÓòÛıÿÿÿÿ8©ç®ñú0
+Ijavascript:S878ù	"!Unexpected use of comma operator.(£ÓòÛıÿÿÿÿ8ªç®ñú0
+ijavascript:S905ú	"FExpected an assignment or function call and instead saw an expression.(¶Úòâ8ªç®ñú0
+Djavascript:S878ú	"!Unexpected use of comma operator.(¶Úòâ8«ç®ñú0
+ijavascript:S905û	"FExpected an assignment or function call and instead saw an expression.(¤ß£Ê8¬ç®ñú0
+Djavascript:S878û	"!Unexpected use of comma operator.(¤ß£Ê8¬ç®ñú0
+ijavascript:S905€
+"FExpected an assignment or function call and instead saw an expression.(œÿ¾8­ç®ñú0
+Djavascript:S878€
+"!Unexpected use of comma operator.(œÿ¾8®ç®ñú0
+Cjavascript:S878„
+"!Unexpected use of comma operator.(À›ğ28°ç®ñú0
+Ijavascript:S878–
+"!Unexpected use of comma operator.(£óÁñùÿÿÿÿ8±ç®ñú0
+njavascript:S905–
+"FExpected an assignment or function call and instead saw an expression.(£óÁñùÿÿÿÿ8²ç®ñú0
+Ijavascript:S878–
+"!Unexpected use of comma operator.(£óÁñùÿÿÿÿ8³ç®ñú0
+ijavascript:S905—
+"FExpected an assignment or function call and instead saw an expression.(¶Úòâ8´ç®ñú0
+Djavascript:S878—
+"!Unexpected use of comma operator.(¶Úòâ8µç®ñú0
+njavascript:S905˜
+"FExpected an assignment or function call and instead saw an expression.(æÁ˜°ıÿÿÿÿ8¸ç®ñú0
+Ijavascript:S878˜
+"!Unexpected use of comma operator.(æÁ˜°ıÿÿÿÿ8¹ç®ñú0
+gjavascript:S1874´
+">'$1' is deprecated. A legacy feature for browser compatibility(“ÚÛùÿÿÿÿ8¹ç®ñú0
+kjavascript:S1874´
+"B'substr' is deprecated. A legacy feature for browser compatibility(“ÚÛùÿÿÿÿ8ºç®ñú0
+gjavascript:S1874´
+">'$1' is deprecated. A legacy feature for browser compatibility(“ÚÛùÿÿÿÿ8»ç®ñú0
+gjavascript:S1874µ
+">'$1' is deprecated. A legacy feature for browser compatibility(ˆÂˆ£ÿÿÿÿÿ8¼ç®ñú0
+gjavascript:S1874µ
+">'$1' is deprecated. A legacy feature for browser compatibility(ˆÂˆ£ÿÿÿÿÿ8½ç®ñú0
+kjavascript:S1874µ
+"B'substr' is deprecated. A legacy feature for browser compatibility(ˆÂˆ£ÿÿÿÿÿ8¾ç®ñú0
+}javascript:S3776¹
+"TRefactor this function to reduce its Cognitive Complexity from 40 to the 15 allowed.(ŠÁßûÿÿÿÿ8Àç®ñú0
+Kjavascript:S1788¹
+""Default parameters should be last.(ŠÁßûÿÿÿÿ8Áç®ñú0
+Kjavascript:S1788¹
+""Default parameters should be last.(ŠÁßûÿÿÿÿ8Ãç®ñú0
+Kjavascript:S1788¹
+""Default parameters should be last.(ŠÁßûÿÿÿÿ8Äç®ñú0
+mjavascript:S3358¼
+"DExtract this nested ternary operation into an independent statement.(ïÍ½—øÿÿÿÿ8Åç®ñú0
+mjavascript:S3358¼
+"DExtract this nested ternary operation into an independent statement.(ïÍ½—øÿÿÿÿ8Èç®ñú0
+Djavascript:S878Í
+"!Unexpected use of comma operator.(‘ñ±¦8Êç®ñú0
+Djavascript:S878Ï
+"!Unexpected use of comma operator.(î˜ã‹8Íç®ñú0
+ijavascript:S905Ô
+"FExpected an assignment or function call and instead saw an expression.(…šÓí8Ïç®ñú0
+Djavascript:S878Ô
+"!Unexpected use of comma operator.(…šÓí8Ñç®ñú0
+hjavascript:S905â
+"FExpected an assignment or function call and instead saw an expression.(ôƒÉ8Óç®ñú0
+Cjavascript:S878â
+"!Unexpected use of comma operator.(ôƒÉ8Ôç®ñú0
