@@ -2,7 +2,7 @@
   "id": "sliverkiss.sub",
   "name": "sliverkiss 脚本订阅",
   "author": "@sliverkiss",
-  "icon": "https://raw.githubusercontent.com/Sliverkiss/helloworld/Loon/icon/sliverkiss.png",
+  "icon": "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/sliverkiss.png",
   "repo": "https://github.com/Sliverkiss/helloworld.git",
   "apps": [
     {
@@ -15,27 +15,6 @@
       ],
       "descs_html": [
         "<h4 align=\"center\">打开米游社，此时会弹出第一条获取成功的通知，再随便打开一个游戏的签到页面，会收到第二条获取成功的通知.</a></h4>"
-      ],
-      "settings": [
-        {
-          "id": "kayanouriko_mihoyobbs_headers_bbs",
-          "name": "米游社任务cookie",
-          "desc": "打开米游社，获取第一条cookie"
-        },
-        {
-          "id": "kayanouriko_mihoyobbs_headers_sign",
-          "name": "米游社签到cookie",
-          "val": "",
-          "type": "text",
-          "desc": "随便打开一个游戏的签到页面，获取cookie"
-        },
-        {
-          "id": "kayanouriko_mihoyobbs_headers_sign",
-          "name": "米游社任务设置自定义",
-          "val": "",
-          "type": "text",
-          "desc": "打开example.com传入参数设置"
-        }
       ],
       "author": "@kayanouriko",
       "repo": "https://github.com/kayanouriko/quantumultx-mihoyobbs-auto-helper",
