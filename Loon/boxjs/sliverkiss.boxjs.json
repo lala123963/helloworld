@@ -8,7 +8,11 @@
     {
       "id": "mihiyo",
       "name": "米游社小助手",
-      "key": ["kayanouriko_mihoyobbs_headers_bbs","kayanouriko_mihoyobbs_headers_sign"],
+      "key": [
+        "kayanouriko_mihoyobbs_headers_bbs",
+        "kayanouriko_mihoyobbs_headers_sign",
+        "kayanouriko_mihoyobbs_config"
+      ],
       "descs_html": [
         "<h4 align=\"center\">打开米游社，此时会弹出第一条获取成功的通知，再随便打开一个游戏的签到页面，会收到第二条获取成功的通知.</a></h4>"
       ],
@@ -16,8 +20,6 @@
         {
           "id": "kayanouriko_mihoyobbs_headers_bbs",
           "name": "米游社任务cookie",
-          "val": "",
-          "type": "text",
           "desc": "打开米游社，获取第一条cookie"
         },
         {
@@ -26,6 +28,13 @@
           "val": "",
           "type": "text",
           "desc": "随便打开一个游戏的签到页面，获取cookie"
+        },
+        {
+          "id": "kayanouriko_mihoyobbs_headers_sign",
+          "name": "米游社任务设置自定义",
+          "val": "",
+          "type": "text",
+          "desc": "打开example.com传入参数设置"
         }
       ],
       "author": "@kayanouriko",
@@ -34,82 +43,6 @@
       "icons": [
         "https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/assets/gallery-icon.png",
         "https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/assets/gallery-icon.png"
-      ]
-    },
-    {
-      "id": "Procuratorate",
-      "name": "工作打卡",
-      "key": [],
-      "descs_html": [
-        "<h4 align=\"center\">打开工作打卡的小程序手动进行一次打卡.</a></h4>"
-      ],
-      "settings": [
-        {
-          "id": "procuratorate_fast",
-          "name": "快速签到",
-          "val": false,
-          "type": "boolean",
-          "desc": "不管今天是否上班, 都进行打卡(默认关闭)"
-        },
-        {
-          "id": "procuratorate_cookie",
-          "name": "签到cookie",
-          "val": "",
-          "type": "text",
-          "desc": "上班打卡验证信息"
-        },
-        {
-          "id": "procuratorate_body",
-          "name": "签到body",
-          "val": "",
-          "type": "textarea",
-          "desc": "上班打卡请求体"
-        }
-      ],
-      "author": "@chiupam",
-      "repo": "https://github.com/chiupam/surge",
-      "script": "https://raw.githubusercontent.com/chiupam/surge/main/scripts/javascripts/procuratorate.js",
-      "icons": [
-        "https://raw.githubusercontent.com/chiupam/surge/main/boxjs/icon/Procuratorate.png",
-        "https://raw.githubusercontent.com/chiupam/surge/main/boxjs/icon/Procuratorate.png"
-      ]
-    },
-    {
-      "id": "zsfc",
-      "name": "掌上飞车",
-      "keys": [],
-      "descs_html": [
-        "<h4 align=\"center\">掌上飞车APP => 发现 => 每日签到 => 点击签到</a></h4>"
-      ],
-      "settings": [
-        {
-          "id": "zsfc_url",
-          "name": "签到地址",
-          "val": "",
-          "type": "textarea",
-          "desc": "每日签到的地址"
-        },
-        {
-          "id": "zsfc_query",
-          "name": "签到验证",
-          "val": "",
-          "type": "textarea",
-          "desc": "身份验证"
-        },
-        {
-          "id": "zsfc_headers",
-          "name": "签到请求头",
-          "val": "",
-          "type": "textarea",
-          "desc": "每日签到的请求头"
-        }
-      ],
-      "author": "@chiupam",
-      "repo": "https://github.com/chiupam/surge",
-      "script": "https://raw.githubusercontent.com/chiupam/surge/main/scripts/javascripts/zsfc.js",
-      "icons": [
-        "https://raw.githubusercontent.com/chiupam/surge/main/boxjs/icon/zsfc.jpeg",
-        "https://raw.githubusercontent.com/chiupam/surge/main/boxjs/icon/zsfc.jpeg"
       ]
     },
     {
