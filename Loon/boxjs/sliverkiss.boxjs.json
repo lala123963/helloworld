@@ -22,8 +22,6 @@
           "name": "米游社任务cookie",
           "val": "",
           "type": "text",
-          "autoGrow": true,
-          "rows": 1,
           "desc": "打开米游社，获取第一条cookie"
         },
         {
@@ -31,8 +29,6 @@
           "name": "米游社签到cookie",
           "val": "",
           "type": "text",
-          "autoGrow": true,
-          "rows": 1,
           "desc": "随便打开一个游戏的签到页面，获取cookie"
         },
         {
@@ -40,8 +36,6 @@
           "name": "米游社任务设置自定义",
           "val": "",
           "type": "text",
-          "autoGrow": true,
-          "rows": 1,
           "desc": "打开example.com传入参数设置"
         }
       ],
