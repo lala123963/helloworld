@@ -21,7 +21,7 @@ const signcookie="iios_cookie";
 const signauthorization="iios_authorization"
 //获取boxjs中的环境变量
 var sicookie = $.getdata(signcookie);
-var siauthorization = $.getdata(siauthorization)
+var siauthorization = $.getdata(signauthorization)
 
 //主程序入口
 !(async () => {
@@ -44,8 +44,7 @@ var siauthorization = $.getdata(siauthorization)
 function getCookie() {
   if (
     $request &&
-    $request.method != "OPTIONS" &&
-    $request.url.match(/checkin/)
+    $request.method != "OPTIONS"
   ) {
     const sicookie = $request.headers["Cookie"];
     $.log(sicookie);
