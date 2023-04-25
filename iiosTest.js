@@ -86,9 +86,9 @@ function signin() {
       body: body,
     };
     $.post(signinRequest, (error, response, data) => {
-      var headers = response.server;
+      var body = response.body;
       //var obj = JSON.parse(headers);
-       $.log(headers);
+       $.log(body);
       /*
       if (obj.message != "oops, token error") {
         if (obj.message != "Please Try Tomorrow") {
