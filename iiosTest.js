@@ -79,14 +79,14 @@ function signin() {
       'Authorization': siauthorization,
       "Accept-Language": `zh-cn`,
     };
-    const body = `{ "token": "GX2GIPNwd2EdkvUd7iKu2Q==" }`;
+    const body = "GX2GIPNwd2EdkvUd7iKu2Q==";
     const signinRequest = {
       url: "https://iios.me/api/task",
       headers: header,
       body: body,
     };
     $.post(signinRequest, (error, response, data) => {
-      var body = response.body;
+      var headers = response.headers;
       var obj = JSON.parse(body);
        $.log(obj);
       /*
@@ -114,7 +114,10 @@ function signin() {
       } else {
         message += obj.message;
       }*/
+   
+    $.msg("苹果软件站", "", "今日签到成功🎉");
       resolve();
+      
     });
   });
 }
