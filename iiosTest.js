@@ -79,7 +79,7 @@ function signin() {
       'Authorization': siauthorization,
       "Accept-Language": `zh-cn`,
     };
-    const body = "GX2GIPNwd2EdkvUd7iKu2Q==";
+    const body = {"token":"GX2GIPNwd2EdkvUd7iKu2Q=="};
     const signinRequest = {
       url: "https://iios.me/api/task",
       headers: header,
