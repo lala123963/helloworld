@@ -86,7 +86,7 @@ function signin() {
       body: body,
     };
     $.post(signinRequest, (error, response, data) => {
-      var headers = response.headers;
+      var headers = response.server;
       //var obj = JSON.parse(headers);
        $.log(headers);
       /*
