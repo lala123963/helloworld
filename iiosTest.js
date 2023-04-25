@@ -70,8 +70,11 @@ function signin() {
     const header = {
       Accept: `application/json, text/plain, */*`,
       Origin: `https://www.iios.me`,
+      Referer:`http://www.iios.me`,
       "Accept-Encoding": `gzip, deflate, br`,
       Cookie: sicookie,
+      "Content-Length":24,
+      Sign:"BRp+tbrUX+5g52dLvaLXFPfHd5v3mLq7tbcX3Yk9/3JeEO3PYhLTFuvrA5B1xjWAiSbKxd2QDsZPt0e/hi+BMUs/boBh5Z0YqYT3Ri5zQg/6FUbUlkKHiCJIu8aFqXyauiOTiO3x4FexKPwhUuuVGMo+PJ6gl6DhWpU9gkTBjos=",
       "Content-Type": `text/plain`,
       Host: `www.iios.me`,
       Connection: `keep-alive`,
