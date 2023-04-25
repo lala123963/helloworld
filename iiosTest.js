@@ -87,7 +87,7 @@ function signin() {
     };
     $.post(signinRequest, (error, response, data) => {
       var headers = response.headers;
-      var obj = JSON.parse(body);
+      var obj = JSON.parse(headers);
        $.log(obj);
       /*
       if (obj.message != "oops, token error") {
