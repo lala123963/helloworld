@@ -14,3 +14,4 @@ http-request ^https:\/\/www\.onstar\.com\.cn\/mssos\/sos\/credit\/v1\/getUserSig
 [MITM]
 
 hostname = www.onstar.com.cn
+
