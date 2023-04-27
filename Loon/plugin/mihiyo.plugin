@@ -25,6 +25,5 @@ http-request ^https://api-takumi.mihoyo.com/binding/api/getUserGameRoles script-
 http-request ^https://example.com/? script-path=https://raw.githubusercontent.com/kayanouriko/quantumultx-mihoyobbs-auto-helper/main/src/mihoyobbs.config.js, timeout=60 ,tag=mihoyobbs.config_13
 
 [MITM]
-
 hostname = bbs-api.mihoyo.com,api-takumi.mihoyo.com,example.com
 
