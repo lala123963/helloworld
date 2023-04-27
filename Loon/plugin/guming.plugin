@@ -10,3 +10,4 @@ http-response ^https:\/\/newton\.gumingnc\.com\/newton-buyer\/newton\/buyer\/(um
 
 [Mitm]
 hostname = newton.gumingnc.com
+
