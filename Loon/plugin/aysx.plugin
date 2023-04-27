@@ -5,7 +5,6 @@
 #!icon=https://github.com/KeiKinn/StickerOnScreen/raw/main/Stickers/Sticker_1271.png
 
 [Rule]
-
 DOMAIN,api-access.pangolin-sdk-toutiao.com,DIRECT
 DOMAIN,open.e.kuaishou.com,REJECT
 DOMAIN,video-dsp.pddpic.com,REJECT
@@ -27,9 +26,7 @@ DOMAIN-SUFFIX,doubleclick.net,REJECT
 DOMAIN-SUFFIX,gvt1.com,REJECT
 
 [Script]
-
 http-response ^https:\/\/api-access\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/get_ads.+ script-path=https://gist.githubusercontent.com/Mattraks/cf41ab5f29271cbfc13922075c54523e/raw/kp.js, requires-body=true, tag=爱阅跳广告直接领取_23
 
 [MITM]
-
 hostname = api-access.pangolin-sdk-toutiao.com
