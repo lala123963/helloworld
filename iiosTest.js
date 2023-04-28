@@ -96,8 +96,9 @@ function signin() {
       $("----response.body----")
        $.log(body);
       $("---response---")
-        $.log(---error---)
-      $.log("---error---")
+      $.log(response)
+        $.log("---error---")
+      $.log(error)
       /*
       if (obj.message != "oops, token error") {
         if (obj.message != "Please Try Tomorrow") {
