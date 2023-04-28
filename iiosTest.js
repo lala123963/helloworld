@@ -92,11 +92,11 @@ function signin() {
     $.post(signinRequest, (error, response, data) => {
       var body = response.body;
       //var obj = JSON.parse(headers);
-      $("----data-----")
+      $.log("----data-----")
       $.log(data)
-      $("----response.body----")
+      $.log("----response.body----")
        $.log(body);
-      $("---response---")
+      $.log("---response---")
       $.log(response)
         $.log("---error---")
       $.log(error)
