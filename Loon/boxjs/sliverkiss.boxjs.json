@@ -51,7 +51,7 @@
       "id": "maicaimeituan",
       "name": "美团买菜",
       "keys": ["jojo_mall_meituan"],
-      "desc": "",
+      "desc": "打开美团->搜索美团买菜->点击我的->买菜币->签到获取token",
       "settings": [{
         "id": "jojo_mall_meituan",
         "name": "jojo_mall_meituan",
