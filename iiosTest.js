@@ -96,8 +96,8 @@ function signin() {
       $.log(data)
       $.log("----response.body----")
        $.log(body);
-      $.log("---response---")
-      $.log(response)
+      $.log("---response.headers---")
+      $.log(response.headers)
         $.log("---error---")
       $.log(error)
       /*
