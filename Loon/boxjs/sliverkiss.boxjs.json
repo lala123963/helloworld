@@ -48,6 +48,26 @@
       ]
     },
     {
+      "id": "maicaimeituan",
+      "name": "美团买菜",
+      "keys": ["jojo_mall_meituan"],
+      "desc": "",
+      "settings": [{
+        "id": "jojo_mall_meituan",
+        "name": "jojo_mall_meituan",
+        "val": "",
+        "type": "text",
+        "placeholder": "",
+        "desc": ""
+      }],
+      "script": "https://raw.githubusercontent.com/JoJoJotarou/myScript/master/script/meituan/mall.meituan.mallcoin.task.js",
+      "author": "@JoJoJotarou",
+      "repo": "https://github.com/JoJoJotarou/myScript",
+      "icons": [
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/meituan.png",
+        "https://raw.githubusercontent.com/Orz-3/mini/master/Color/meituan.png"]
+    },
+    {
       "id": "MySetting",
       "name": "通用设置",
       "key": [],
