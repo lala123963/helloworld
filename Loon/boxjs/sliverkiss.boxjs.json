@@ -69,6 +69,69 @@
         ]
     },
     {
+      "id": "fdsh",
+      "name": "福袋生活",
+      "keys": ["fdshck"],
+      "desc": "活动入口:我的-横幅广告-福袋农场",
+      "settings": [{
+        "id": "fdshck",
+        "name": "fdshck",
+        "val": "",
+        "type": "text",
+        "placeholder": "",
+        "desc": ""
+      }],
+      "script": "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/Scripts/fdshnc.js",
+      "author": "@蛋炒饭",
+      "repo": "https://github.com/Slicerkiss/helloworld",
+      "icons": [
+        "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/fudaishenghuo.jpg",
+        "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/fudaishenghuo.jpg"
+        ]
+    },
+    {
+      "id": "yueyequan",
+      "name": "悦野圈",
+      "keys": ["yyq_data"],
+      "desc": "打开美团->搜索美团买菜->点击我的->买菜币->签到获取token",
+      "settings": [{
+        "id": "yyq_data",
+        "name": "yyq_data",
+        "val": "",
+        "type": "text",
+        "placeholder": "",
+        "desc": ""
+      }],
+      "script": "https://raw.githubusercontent.com/smallfawn/QLScriptPublic/main/yyq.js",
+      "author": "@smallfawn",
+      "repo": "https://github.com/smallfawn/QLScriptPublic",
+      "icons": [
+        "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/yueyequan.png",
+        "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/yueyequan.png"
+        ]
+    },
+    {
+      "id": "qtc",
+      "name": "青碳行",
+      "keys": ["qtxck"],
+      "desc": "抓包 carbon.lcago.cn 这个域名 请求体 的body部分的 token",
+      "settings": [{
+        "id": "qtxck",
+        "name": "qtxck",
+        "val": "",
+        "type": "text",
+        "placeholder": "",
+        "desc": ""
+      }],
+      "script": "https://raw.githubusercontent.com/smallfawn/QLScriptPublic/main/qtx.js",
+      "author": "@smallfawn",
+      "repo": "https://github.com/smallfawn/QLScriptPublic",
+      "icons": [
+        "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/qingtanxing.png",
+        "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/qingtanxing.png"
+        ]
+    },
+    {
       "id": "MySetting",
       "name": "通用设置",
       "key": [],
