@@ -113,11 +113,11 @@
     {
       "id": "qtc",
       "name": "青碳行",
-      "keys": ["qtxck"],
+      "keys": ["qtxtk"],
       "desc": "抓包 carbon.lcago.cn 这个域名 请求体 的body部分的 token",
       "settings": [{
-        "id": "qtxck",
-        "name": "qtxck",
+        "id": "qtxtk",
+        "name": "qtxtk",
         "val": "",
         "type": "text",
         "placeholder": "",
