@@ -19,7 +19,8 @@
 //固定声明
 const $ = new Env("iiosCheck");
 const signcookie="iios_cookie";
-const signauthorization="iios_authorization"
+const signauthorization="iios_authorization";
+const sign=$.getdata("iios_sign");//获取sign
 //获取boxjs中的环境变量
 var sicookie = $.getdata(signcookie);
 var siauthorization = $.getdata(signauthorization)
@@ -70,22 +71,23 @@ function signin() {
   return new Promise((resolve) => {
     const header = {
       Accept: `application/json, text/plain, */*`,
-      Origin: `https://www.iios.me`,
-      Referer:`http://www.iios.me`,
+      Origin: `https://www.iios.fun`,
+      Referer:`http://www.iios.fun/points`,
       "Accept-Encoding": `gzip, deflate, br`,
       Cookie: sicookie,
+      'Set-Fetch-Dest':'empty',
       "Content-Length":24,
-      Sign:"BRp+tbrUX+5g52dLvaLXFPfHd5v3mLq7tbcX3Yk9/3JeEO3PYhLTFuvrA5B1xjWAiSbKxd2QDsZPt0e/hi+BMUs/boBh5Z0YqYT3Ri5zQg/6FUbUlkKHiCJIu8aFqXyauiOTiO3x4FexKPwhUuuVGMo+PJ6gl6DhWpU9gkTBjos=",
+      Sign:sign,
       "Content-Type": `text/plain`,
-      Host: `www.iios.me`,
+      Host: `www.iios.fun`,
       Connection: `keep-alive`,
       "User-Agent": `Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1`,
       'Authorization': siauthorization,
       "Accept-Language": `zh-cn`,
     };
-    const body = {"token":"GX2GIPNwd2EdkvUd7iKu2Q=="};
+    const body = "VGpccgSKW82Iuai6/XqKdA==";
     const signinRequest = {
-      url: "https://iios.me/api/task",
+      url: "https://iios.fun/api/task",
       headers: header,
       body: body,
     };
