@@ -134,7 +134,7 @@
     {
       "id": "ksfcys",
       "name": "康师傅畅饮社",
-      "keys": ["ksfcysToken"，"ksfcysDraw"],
+      "keys": ["ksfcysToken","ksfcysDraw"],
       "desc_html": ["<h4 align=\"center\">打开美团->搜索美团买菜->点击我的->买菜币->签到获取token</a></h4>"],
       "settings": [
         {
