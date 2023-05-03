@@ -5,7 +5,7 @@
 #!icon=https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/czfajlb.png
 
 [Script]
-cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/lucienyida/yida/main/czlove.js, enabled=true, tag=纯甄粉爱俱乐部
+cron "0 0 8 * * *" script-path=https://raw.githubusercontent.com/lucienyida/yida/main/czlove.js, enabled=true, timeout=300, tag=纯甄粉爱俱乐部
 
 http-request https://ucode-openapi.aax6.cn/mnmember/memberPoints script-path=https://raw.githubusercontent.com/lucienyida/yida/main/czlove.js, requires-body=false, timeout=10, tag=czlove
 
