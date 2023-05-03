@@ -1,0 +1,13 @@
+!name=纯甄粉爱俱乐部
+#!desc=小程序：纯甄粉爱俱乐部日常任务签到
+#!homepage=http://nm6.xyz:20080/ningmeng
+#!author=@ningmeng
+#!icon=https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/kangshifu.png
+
+[Script]
+cron "0 0 * * *" script-path=http://nm6.xyz:20080/ningmeng/ningmeng/raw/branch/main/czlove.js, enabled=true, tag=纯甄粉爱俱乐部
+
+http-request https://ucode-openapi.aax6.cn/mnmember/memberPoints script-path=http://nm6.xyz:20080/ningmeng/ningmeng/raw/branch/main/czlove.js, requires-body=false, timeout=10, tag=czlove
+
+[MITM]
+hostname = ucode-openapi.aax6.cn
