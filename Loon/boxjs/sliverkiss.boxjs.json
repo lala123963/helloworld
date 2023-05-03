@@ -51,7 +51,7 @@
       "id": "maicaimeituan",
       "name": "美团买菜",
       "keys": ["jojo_mall_meituan"],
-      "desc_html": ["<h4 align=\"center\">打开美团->搜索美团买菜->点击我的->买菜币->签到获取token</a></h4>"],
+      "descs_html": ["<h4 align=\"center\">打开美团->搜索美团买菜->点击我的->买菜币->签到获取token</a></h4>"],
       "settings": [{
         "id": "jojo_mall_meituan",
         "name": "jojo_mall_meituan",
@@ -72,7 +72,7 @@
       "id": "fdsh",
       "name": "福袋生活",
       "keys": ["fdshck"],
-      "desc_html":["<h4 align=\"center\">活动入口:我的-横幅广告-福袋农场</a></h4>"],
+      "descs_html":["<h4 align=\"center\">活动入口:我的-横幅广告-福袋农场</a></h4>"],
       "settings": [{
         "id": "fdshck",
         "name": "fdshck",
@@ -93,7 +93,7 @@
       "id": "yueyequan",
       "name": "悦野圈",
       "keys": ["yyq_data"],
-      "desc_html": ["<h4 align=\"center\">打开美团->搜索美团买菜->点击我的->买菜币->签到获取token</a></h4>"],
+      "descs_html": ["<h4 align=\"center\">打开美团->搜索美团买菜->点击我的->买菜币->签到获取token</a></h4>"],
       "settings": [{
         "id": "yyq_data",
         "name": "yyq_data",
@@ -114,7 +114,7 @@
       "id": "qtc",
       "name": "青碳行",
       "keys": ["qtxtk"],
-      "desc_html": ["<h4 align=\"center\">抓包 carbon.lcago.cn 这个域名 请求体 的body部分的 token</a></h4>"],
+      "descs_html": ["<h4 align=\"center\">抓包 carbon.lcago.cn 这个域名 请求体 的body部分的 token</a></h4>"],
       "settings": [{
         "id": "qtxtk",
         "name": "qtxtk",
@@ -135,7 +135,8 @@
       "id": "ksfcys",
       "name": "康师傅畅饮社",
       "keys": ["ksfcysToken","ksfcysDraw"],
-      "desc_html": ["<h4 align=\"center\">打开美团->搜索美团买菜->点击我的->买菜币->签到获取token</a></h4>"],
+      "descs_html": ["<h4 align=\"center\">脚本自动签到，默认不会抽奖
+如果需要自动抽奖，请设置变量ksfcysDraw为true</a></h4>"],
       "settings": [
         {
           "id": "ksfcysToken",
