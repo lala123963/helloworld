@@ -138,16 +138,16 @@
       "desc_html": ["<h4 align=\"center\">打开美团->搜索美团买菜->点击我的->买菜币->签到获取token</a></h4>"],
       "settings": [
         {
-          "id":"ksfcysDraw",
-          "name":"ksfcysDraw",
-          "val":"false",
-          "type":"boolean",
-          "placeholder":"",
-          "desc":""
+          "id": "ksfcysToken",
+          "name": "ksfcysToken",
+          "val": "",
+          "type": "text",
+          "placeholder": "",
+          "desc": ""
         },
         {
-        "id": "ksfcysToken",
-        "name": "ksfcysToken",
+        "id": "ksfcysDraw",
+        "name": "ksfcysDraw",
         "val": "",
         "type": "text",
         "placeholder": "",
