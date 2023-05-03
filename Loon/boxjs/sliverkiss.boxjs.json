@@ -132,6 +132,36 @@
         ]
     },
     {
+      "id": "ksfcys",
+      "name": "康师傅畅饮社",
+      "keys": ["ksfcysToken"，"ksfcysDraw"],
+      "desc_html": ["<h4 align=\"center\">打开美团->搜索美团买菜->点击我的->买菜币->签到获取token</a></h4>"],
+      "settings": [
+        {
+          "id":"ksfcysDraw",
+          "name":"ksfcysDraw",
+          "val":"false",
+          "type":"boolean",
+          "placeholder":"",
+          "desc":""
+        },
+        {
+        "id": "ksfcysToken",
+        "name": "ksfcysToken",
+        "val": "",
+        "type": "text",
+        "placeholder": "",
+        "desc": ""
+      }],
+      "script": "https://raw.githubusercontent.com/hongke120/qlym/master/ksfcys.js",
+      "author": "@leafxcy",
+      "repo": "https://github.com/leafxcy/JavaScript/",
+      "icons": [
+        "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/kangshifu.png",
+        "https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/icon/kangshifu.png"
+        ]
+    },
+    {
       "id": "MySetting",
       "name": "通用设置",
       "key": [],
