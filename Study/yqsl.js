@@ -48,7 +48,7 @@ function status() {
             headers:header,
             body: body,
         };
-        $.get(statusRequest, (error, response, data) => {
+        $.post(statusRequest, (error, response, data) => {
             var body = response.body;
             var obj = JSON.parse(body);
             $.log(obj);
