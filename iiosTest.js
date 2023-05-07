@@ -27,7 +27,7 @@ const siauthorization = " Bearer eyJhbGciOiJIUzUxMiJ9.eyJwX2lkIjowLCJwcyI6IjAiLC
 function status1() {
     return new Promise((resolve) => {
         const statusRequest = {
-            url: "https://glados.rocks/api/user/status",
+            url: "https://api.yqslmall.com/mall-menber/integral/get",
             headers: { Authorization: siauthorization },
         };
         $.post(statusRequest, (error, response, data) => {
