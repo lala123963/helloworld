@@ -17,21 +17,30 @@
 
 
 //固定声明
-const $ = new Env("iiosCheck");
-const signcookie="iios_cookie";
-const signauthorization="iios_authorization";
-const sign=$.getdata("iios_sign");//获取sign
-//获取boxjs中的环境变量
-var sicookie = $.getdata(signcookie);
-var siauthorization = $.getdata(signauthorization)
-var account;
-var expday;
-var remain;
-var remainday;
-var change;
-var changeday;
-var msge;
-var message = "";
+
+const $ = new Env("元气森林会员中心");
+//环境变量
+const signauthorization = "yqslCookie";
+const siauthorization = " Bearer eyJhbGciOiJIUzUxMiJ9.eyJwX2lkIjowLCJwcyI6IjAiLCJ1X2lkIjo2OTkwNDUyLCJtX2lkIjo0NzkxNzg3LCJhcHBJZCI6Ind4YjczNjQ3OTEzMzMzMzY3NiIsImNfZGF0ZSI6MTY4MzMzNjI0MDE3NiwiZXhwIjoxNjgzOTQxMDQwfQ.mgHU3f_Lq70buFro7I2wbeuyKGWaGxFH7a5ItLn8_ss1TqXK0V6PqJuOqIoPGpBW7zA0IAXF4_2KIn8hcnr5pA";
+
+//查询积分函数
+function status1() {
+    return new Promise((resolve) => {
+        const statusRequest = {
+            url: "https://glados.rocks/api/user/status",
+            headers: { Authorization: siauthorization },
+        };
+        $.post(statusRequest, (error, response, data) => {
+            var body = response.body;
+            var obj = JSON.parse(body);
+            console.log(obj);
+            resolve();
+        });
+    });
+}
+
+
+status();
 
 //主程序入口
 !(async () => {
@@ -39,8 +48,8 @@ var message = "";
     getCookie();
     return;
   }
-  await signin();
-  //await status();
+  //await signin();
+  await status1();
 })()
   .catch((e) => {
     $.log("", `❌失败! 原因: ${e}!`, "");
@@ -51,51 +60,12 @@ var message = "";
 
 
 
-//获取Cookie
-function getCookie() {
-  if (
-    $request &&
-    $request.method != "OPTIONS" &&
-    $request.url.match(/checkin/)
-  ) {
-    const sicookie = $request.headers["Cookie"];
-    $.log(sicookie);
-    $.setdata(sicookie, signcookie);
-    const siauthorization = $request.headers["Authorization"];
-    $.log(siauthorization);
-    $.setdata(siauthorization, signauthorization);
-    $.msg("苹果软件站", "", "获取签到Cookie成功🎉");
-  }
-}
 //签到任务
 function signin() {
   return new Promise((resolve) => {
-    const header = {
-      Accept: `application/json, text/plain, */*`,
-      Origin: `https://www.iios.fun`,
-      Referer:`http://www.iios.fun/points`,
-      "Accept-Encoding": `gzip, deflate, br`,
-      Cookie: sicookie,
-      'Set-Fetch-Dest':'empty',
-      "Content-Length":24,
-      Sign:sign,
-      "Content-Type": `text/plain`,
-      Host: `www.iios.fun`,
-      Connection: `keep-alive`,
-      "User-Agent": `Mozilla/5.0 (iPhone; CPU iPhone OS 14_0_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1`,
-      'Authorization': siauthorization,
-      "Accept-Language": `zh-cn`,
-    };
-    const body = "VGpccgSKW82Iuai6/XqKdA==";
-    const signinRequest = {
-      url: "https://iios.fun/api/task",
-      headers: header,
-      body: body,
-    };
+    
     $.post(signinRequest, (error, response, data) => {
       var body = response.body;
-      //var obj = JSON.parse(headers);
-      //var headers=JSON.parse(response.headers)
       $.log("----data-----")
       $.log(data)
       $.log("----response.body----")
@@ -104,35 +74,8 @@ function signin() {
       $.log(response)
         $.log("---error---")
       $.log(error)
-      /*
-      if (obj.message != "oops, token error") {
-        if (obj.message != "Please Try Tomorrow") {
-          var date = new Date();
-          var y = date.getFullYear();
-          var m = date.getMonth() + 1;
-          if (m < 10) m = "0" + m;
-          var d = date.getDate();
-          if (d < 10) d = "0" + d;
-          var time = y + "-" + m + "-" + d;
-          var business = obj.list[0].business;
-          var sysdate = business.slice(-10);
-          if (JSON.stringify(time) == JSON.stringify(sysdate)) {
-            change = obj.list[0].change;
-            changeday = parseInt(change);
-            message += `今日签到获得${changeday}天`;
-          } else {
-            message += `今日签到获得0天`;
-          }
-        } else {
-          message += "今日已签到";
-        }
-      } else {
-        message += obj.message;
-      }*/
-   
     $.msg("苹果软件站", "", "今日签到成功🎉");
       resolve();
-      
     });
   });
 }
