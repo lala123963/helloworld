@@ -84,13 +84,10 @@ function signin(user) {
             headers: header,
             body: params
         };
-
         $.post(signinRequest, (error, response, data) => {
-            console.log(response);
             var body = response.body;
             //var result = JSON.parse(body);
             var result=body;
-            console.log(result);
             //{"code":0,"msg":"ok","data":true}
             if (result?.code == 0) {
                 if (result?.data) {
@@ -119,7 +116,7 @@ async function getCustomerPoints(user) {
         };
         $.get(signinRequest, (error, response, data) => {
             var body = response.body;
-            var result = JSON.parse(body);
+            var result = body;
             if (result?.code == 0) {
                 message += `\n帐号[${user.index}]${result?.userId}挪金币余额：${result?.data?.tntotalAmout}`;
             } else {
