@@ -73,7 +73,7 @@ function signin() {
             var body = response.body;
             var obj = JSON.parse(body);
             //成功时返回{"error":0}
-            if (obj == 0) {
+            if (obj.error == 0) {
                 //obj.error是0代表完成
                 message += `元气森林会员中心签到成功！`;
             } else {
