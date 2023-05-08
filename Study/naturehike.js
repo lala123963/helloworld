@@ -2,7 +2,7 @@
 
 //需要3个参数：KDTWEAPPSESSIONID，kdt_id，access_token，分别用#号连接
 const $ = new Env("挪客会员露营社");
-const env_name = "naturehikeCookie";
+const env_name = "nk_data";
 const env = $.getdata(env_name)
 
 //通知相关
