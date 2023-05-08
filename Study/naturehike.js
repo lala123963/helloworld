@@ -89,7 +89,7 @@ function signin(user) {
             //var result = JSON.parse(body);
             var result=body;
             //{"code":0,"msg":"ok","data":true}
-            if (result?.code == 0) {
+            if (result["code"] == 0) {
                 if (result?.data) {
                     message += `\n帐号[${user.index}]签到成功！`;
                 } else {
@@ -117,7 +117,7 @@ async function getCustomerPoints(user) {
         $.get(signinRequest, (error, response, data) => {
             var body = response.body;
             var result = body;
-            if (result?.code == 0) {
+            if (result["code"] == 0) {
                 message += `\n帐号[${user.index}]${result?.userId}挪金币余额：${result?.data?.tntotalAmout}`;
             } else {
                 message += `\n帐号[${user.index}]状态查询失败！请检查环境变量${env_name}是否正确！`
