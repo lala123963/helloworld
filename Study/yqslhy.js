@@ -37,7 +37,7 @@ const signauthorization = "yqslCookie";//环境变量名字
 const siauthorization = $.getdata(signauthorization)
 
 //通知相关
-var message;
+var message="";
 var account;
 var user;
 
