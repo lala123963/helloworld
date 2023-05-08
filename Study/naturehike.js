@@ -75,6 +75,7 @@ function signin(user) {
             Referer: "https://servicewechat.com/wx6b30ed1839d47d45/22/page-frame.html",
             Cookie: user.cookie,
         };
+
         const params = {
             authorizationType: "sign"
         }
@@ -83,9 +84,13 @@ function signin(user) {
             headers: header,
             body: params
         };
+
         $.post(signinRequest, (error, response, data) => {
+            console.log(response);
             var body = response.body;
-            var result = JSON.parse(body);
+            //var result = JSON.parse(body);
+            var result=body;
+            console.log(result);
             //{"code":0,"msg":"ok","data":true}
             if (result?.code == 0) {
                 if (result?.data) {
