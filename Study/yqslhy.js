@@ -51,7 +51,7 @@ var user;
     }
     //开始执行日常签到
     await signin();
-    //查询用户状态
+
     await status();
     //bark推送
     await barkNotify();
@@ -143,13 +143,8 @@ async function barkNotify() {
         }
         //向bark接口发送get请求
         $.get(signRequest, (error, response, data) => {
-            let body = response.body;
-            let result = JSON.parse(body);
-            if (result?.code == 200) {
-                $.log(`bark推送${result?.message}`);
-            } else {
-                $.log(`${result?.message}`);
-            }
+            $.log(`🔔bark消息推送成功！`);
+            
             resolve();
         });
     });
