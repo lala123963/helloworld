@@ -27,12 +27,7 @@ async function main() {
     }
     //多账号分割,这里默认是换行(\n)分割,其他情况自己实现
     //split('\n')会把字符串按照换行符分割, 并把结果存在user_ck数组里
-    try {
-        let user_ck = env.split('\n');
-    } catch (e) {
-        $.meg($.name, "❌未知原因错误", `请检查环境变量${env_name}是否正确！`);
-        return;
-    }
+    let user_ck = env.split('\n');
     let index = 1; //用来给账号标记序号, 从1开始
     //循环遍历每个账号
     for (let ck of user_ck) {
@@ -111,7 +106,7 @@ async function getCustomerPoints(user) {
     return new Promise((resolve) => {
         const header = {
             Cookie: user.cookie,
-            "User-Agent":" Mozilla/5.0 (iPhone; CPU iPhone OS 14_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.37(0x18002524) NetType/WIFI Language/zh_CN miniProgram/wx6b30ed1839d47d45"
+            "User-Agent": " Mozilla/5.0 (iPhone; CPU iPhone OS 14_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.37(0x18002524) NetType/WIFI Language/zh_CN miniProgram/wx6b30ed1839d47d45"
         };
         const signinRequest = {
             url: "https://h5.youzan.com/wscump/pointstore/getCustomerPoints.json",
