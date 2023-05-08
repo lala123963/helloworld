@@ -144,11 +144,12 @@ async function barkNotify() {
         //向bark接口发送get请求
         $.get(signRequest, (error, response, data) => {
             $.log(`🔔bark消息推送成功！`);
-            
+
             resolve();
         });
     });
 }
+
 
 
 /** ---------------------------------固定不动区域----------------------------------------- */
