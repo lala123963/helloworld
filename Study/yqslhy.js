@@ -41,7 +41,6 @@ const siauthorization = $.getdata(signauthorization)
 var message = "";
 var account;
 var user;
-var bark_key=$.getdata("barkApi");
 
 //主程序执行入口
 !(async () => {
@@ -52,10 +51,7 @@ var bark_key=$.getdata("barkApi");
     }
     //开始执行日常签到
     await signin();
-
     await status();
-    //bark推送
-    await barkNotify();
 })()
     .catch((e) => {
         $.log("", `❌失败! 原因: ${e}!`, "");
@@ -128,30 +124,6 @@ function getCookie() {
         $.msg("元气森林会员中心", "", "获取签到Cookie成功🎉");
     }
 }
-
-
-//bark推送服务
-async function barkNotify() {
-    const Api = {
-        key: bark_key,
-        title: $.name,
-        message: message
-    }
-    return new Promise((resolve) => {
-        const str = `https://api.day.app/${Api.key}/${Api.title}/${Api.message}`;
-        const signRequest = {
-            url: str
-        }
-        console.log(str);
-        //向bark接口发送get请求
-        $.get(signRequest, (error, response, data) => {
-            $.log(`🔔bark消息推送成功！`);
-
-            resolve();
-        });
-    });
-}
-
 
 
 /** ---------------------------------固定不动区域----------------------------------------- */
