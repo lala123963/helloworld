@@ -40,7 +40,7 @@ const siauthorization = $.getdata(signauthorization)
 var message = "";
 var account;
 var user;
-
+var bark_key=$.getdata("barkApi");
 
 //主程序执行入口
 !(async () => {
@@ -131,16 +131,17 @@ function getCookie() {
 
 //bark推送服务
 async function barkNotify() {
-    let Api = {
-        key: $.getdata("barkApi"),
+    const Api = {
+        key: bark_key,
         title: $.name,
-        message
+        message: message
     }
     return new Promise((resolve) => {
         const str = `https://api.day.app/${Api.key}/${Api.title}/${Api.message}`;
         const signRequest = {
             url: str
         }
+        console.log(str);
         //向bark接口发送get请求
         $.get(signRequest, (error, response, data) => {
             $.log(`🔔bark消息推送成功！`);
