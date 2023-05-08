@@ -37,9 +37,10 @@ const signauthorization = "yqslCookie";//环境变量名字
 const siauthorization = $.getdata(signauthorization)
 
 //通知相关
-var message="";
+var message = "";
 var account;
 var user;
+
 
 //主程序执行入口
 !(async () => {
@@ -50,7 +51,10 @@ var user;
     }
     //开始执行日常签到
     await signin();
+    //查询用户状态
     await status();
+    //bark推送
+    await barkNotify();
 })()
     .catch((e) => {
         $.log("", `❌失败! 原因: ${e}!`, "");
@@ -123,6 +127,34 @@ function getCookie() {
         $.msg("元气森林会员中心", "", "获取签到Cookie成功🎉");
     }
 }
+
+
+//bark推送服务
+async function barkNotify() {
+    let Api = {
+        key: $.getdata("barkApi"),
+        title: $.name,
+        message
+    }
+    return new Promise((resolve) => {
+        const str = `https://api.day.app/${Api.key}/${Api.title}/${Api.message}`;
+        const signRequest = {
+            url: str
+        }
+        //向bark接口发送get请求
+        $.get(signRequest, (error, response, data) => {
+            let body = response.body;
+            let result = JSON.parse(body);
+            if (result?.code == 200) {
+                $.log(`bark推送${result?.message}`);
+            } else {
+                $.log(`${result?.message}`);
+            }
+            resolve();
+        });
+    });
+}
+
 
 /** ---------------------------------固定不动区域----------------------------------------- */
 
