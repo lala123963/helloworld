@@ -1,6 +1,22 @@
-//挪客会员露营社
-
-//需要cookie中的KDTWEAPPSESSIONID=XXXXXXXXXX，多帐号用#号连接
+/*
+ * @Author: Sliverkiss
+ * @Date: 2023-05-08 16:23:27
+ * @FilePath: https://github.com/Sliverkiss/helloworld/edit/main/Study/naturehike.js
+ *
+ * @Description: 
+ * 微信小程序 挪客会员露营社 日常签到领挪金币，金币可以抵消付费
+ * 捉h5.youzan.com域名任意包下的Cookie中的KDTWEAPPSESSIONID=XXXXXXXXXX，填写到naturehikeCookie中，多帐号用#号连接
+ *
+ * 只用过loon，qx和surge没用过，请自行尝试
+ * 重写：打开微信小程序获取
+ * [Script]
+ * cron "47 0 6 * * *" script-path=https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Study/naturehike.js, timeout=300, tag=挪客会员露营社
+ * [MITM]
+ * hostname= h5.youzan.com
+ *
+ * 定时：一天一两次
+ * cron: 36 7,20 * * *
+ */
 const $ = new Env("挪客会员露营社");
 const env_name = "naturehikeCookie";
 const env = $.getdata(env_name)
@@ -76,11 +92,8 @@ function checkin(user) {
             headers: header,
         };
         $.get(signinRequest, (error, response, data) => {
-            console.log(response)
             var body = response.body;
-            console.log(body)
             var result = JSON.parse(body);
-            console.log(result)
             //{"code":1000030071,"msg":"无法参与，已达最大参与次数"}
             if (result?.code == 0) {
                     message += `\n帐号[${user.index}]签到成功！今日获得${result?.data?.list[0]?.infos?.title}`;
@@ -104,11 +117,8 @@ async function getCustomerPoints(user) {
             headers: header,
         };
         $.get(signinRequest, (error, response, data) => {
-            console.log(response)
             var body = response.body;
-            console.log(body)
             var result = JSON.parse(body);
-            console.log(result)
             if (result?.code == 0) {
                 message += `\n帐号[${user.index}]${result?.data.userId} 挪金币余额：${result?.data?.totalAmount}`;
             } else {
