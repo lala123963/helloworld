@@ -1,9 +1,10 @@
 //挪客会员露营社
 
-//需要3个参数：KDTWEAPPSESSIONID，kdt_id，access_token，分别用#号连接
+//需要cookie中的KDTWEAPPSESSIONID=XXXXXXXXXX，多帐号用#号连接
 const $ = new Env("挪客会员露营社");
-const env_name = "nk_data";
+const env_name = "naturehikeCookie";
 const env = $.getdata(env_name)
+//
 
 //通知相关
 var message = "";
@@ -34,14 +35,10 @@ async function main() {
         if (!ck) continue; //跳过空行
         let ck_info = ck.split('#');
         let cookie = ck_info[0];
-        let kdt_id = ck_info[1];
-        let access_token = ck_info[2];
         //用一个对象代表账号, 里面存放账号信息
         let user = {
             index: index,
-            cookie, //简写法, 效果等同于 openid: openid,
-            kdt_id,
-            access_token
+            cookie
         };
         index = index + 1; //每次用完序号+1
         //开始账号任务
@@ -60,43 +57,35 @@ async function userTask(user) {
     console.log(`\n============= 账号[${user.index}]开始任务 =============`)
     message += `\n============= 账号[${user.index}]开始任务 =============`;
     //用户签到
-    await signin(user);
+    await checkin(user);
     //查询用户状态
     await getCustomerPoints(user);
 }
 
 //签到接口
-function signin(user) {
+function checkin(user) {
     return new Promise((resolve) => {
         const header = {
             "Extra-Data": { "is_weapp": 1 },
-            "content-type": "application/json",
             "User-Agent": " Mozilla/5.0 (iPhone; CPU iPhone OS 14_8 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 MicroMessenger/8.0.37(0x18002524) NetType/WIFI Language/zh_CN miniProgram/wx6b30ed1839d47d45",
             Referer: "https://servicewechat.com/wx6b30ed1839d47d45/22/page-frame.html",
             Cookie: user.cookie,
         };
-
-        const params = {
-            authorizationType: "sign"
-        }
         const signinRequest = {
-            url: `https://h5.youzan.com/wscdeco/im/common/add-authorize-log.json?kdt_id=${user.kdt_id}&access_token=${user.access_token}`,
+            url: "https://h5.youzan.com/wscump/checkin/checkinV2.json?checkinId=3548591",
             headers: header,
-            body: params
         };
-        $.post(signinRequest, (error, response, data) => {
+        $.get(signinRequest, (error, response, data) => {
+            console.log(response)
             var body = response.body;
-            //var result = JSON.parse(body);
-            var result=body;
-            //{"code":0,"msg":"ok","data":true}
-            if (result["code"] == 0) {
-                if (result?.data) {
-                    message += `\n帐号[${user.index}]签到成功！`;
-                } else {
-                    message += `\n帐号[${user.index}]签到失败！`;
-                }
+            console.log(body)
+            var result = JSON.parse(body);
+            console.log(result)
+            //{"code":1000030071,"msg":"无法参与，已达最大参与次数"}
+            if (result?.code == 0) {
+                    message += `\n帐号[${user.index}]签到成功！今日获得${result?.data?.list[0]?.infos?.title}`;
             } else {
-                message += `\n帐号[${user.index}]签到失败！请检查环境变量${env_name}是否正确！`
+                message += `\n帐号[${user.index}]签到失败！${result?.msg}`
             }
             resolve();
         });
@@ -116,8 +105,8 @@ async function getCustomerPoints(user) {
         };
         $.get(signinRequest, (error, response, data) => {
             var body = response.body;
-            var result = body;
-            if (result["code"] == 0) {
+            var result = JSON.parse(body);
+            if (result?.code == 0) {
                 message += `\n帐号[${user.index}]${result?.userId}挪金币余额：${result?.data?.tntotalAmout}`;
             } else {
                 message += `\n帐号[${user.index}]状态查询失败！请检查环境变量${env_name}是否正确！`
