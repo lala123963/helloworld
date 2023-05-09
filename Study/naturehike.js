@@ -104,12 +104,15 @@ async function getCustomerPoints(user) {
             headers: header,
         };
         $.get(signinRequest, (error, response, data) => {
+            console.log(response)
             var body = response.body;
+            console.log(body)
             var result = JSON.parse(body);
+            console.log(result)
             if (result?.code == 0) {
-                message += `\n帐号[${user.index}]${result?.userId}挪金币余额：${result?.data?.tntotalAmout}`;
+                message += `\n帐号[${user.index}]${result?.data.userId} 挪金币余额：${result?.data?.totalAmount}`;
             } else {
-                message += `\n帐号[${user.index}]状态查询失败！请检查环境变量${env_name}是否正确！`
+                message += `\n帐号[${user.index}]状态查询失败！${result.msg}`
             }
             resolve();
         });
