@@ -40,6 +40,7 @@ function status1() {
 }
 
 
+
 status();
 
 //主程序入口
