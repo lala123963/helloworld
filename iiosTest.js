@@ -23,6 +23,7 @@ const $ = new Env("元气森林会员中心");
 const signauthorization = "yqslCookie";
 const siauthorization = " Bearer eyJhbGciOiJIUzUxMiJ9.eyJwX2lkIjowLCJwcyI6IjAiLCJ1X2lkIjo2OTkwNDUyLCJtX2lkIjo0NzkxNzg3LCJhcHBJZCI6Ind4YjczNjQ3OTEzMzMzMzY3NiIsImNfZGF0ZSI6MTY4MzMzNjI0MDE3NiwiZXhwIjoxNjgzOTQxMDQwfQ.mgHU3f_Lq70buFro7I2wbeuyKGWaGxFH7a5ItLn8_ss1TqXK0V6PqJuOqIoPGpBW7zA0IAXF4_2KIn8hcnr5pA";
 
+//测试
 //查询积分函数
 function status1() {
     return new Promise((resolve) => {
