@@ -9,7 +9,7 @@
  * 只用过loon，理论上支持qx、surge，请自行尝试
  * 重写：打开微信小程序,点击探索+获取
  * [Script]
- * cron "0 15 13 * * MON" script-path=https://raw.githubsercontent.com/Sliverkiss/helloworld/main/Study/michelin.js, timeout=300, tag=米其林会员俱乐部
+ * cron "0 15 13 * * 1" script-path=https://raw.githubsercontent.com/Sliverkiss/helloworld/main/Study/michelin.js, timeout=300, tag=米其林会员俱乐部
  * http-request ^https?:\/\/ulp\.michelin\.com\.cn\/op\/.+ script-path=https://raw.githubsercontent.com/Sliverkiss/helloworld/main/Study/michelin.cookie.js, timeout=10, tag=米其林俱乐部token
  *
  * [Mitm]
