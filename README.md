@@ -30,3 +30,4 @@
 *  [@chavyleung](https://github.com/chavyleung) 
 *  [@NobyDa](https://github.com/NobyDa)   
 *  [@wd210010](https://github.com/wd210010)
+*  [@kayanouriko](https://github.com/kayanouriko)
