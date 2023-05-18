@@ -1,4 +1,10 @@
-# Loon
+<div align="center">
+<h1 align="center">Loon自用学习脚本</h1>
+
+<a href="https://github.com/sliverkiss/helloworld/stargazers"><img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/sliverkiss/helloworld?color=yellow&logo=riseup&logoColor=yellow&style=flat-square"></a>
+<a href="https://github.com/sliverkiss/helloworld/network/members"><img alt="GitHub forks" src="https://img.shields.io/github/forks/sliverkiss/helloworld?color=orange&style=flat-square"></a>
+<a href="https://github.com/sliverkiss/helloworld/issues"><img alt="GitHub issues" src="https://img.shields.io/github/issues/sliverkiss/helloworld?color=red&style=flat-square"></a>
+</div>
 > 仅用于学习，自用。收集和整理Quantumult脚本并转换成Loon的格式，著作权归原作者所有，不建议引用，禁止fork。
     
 ### boxjs订阅
