@@ -31,7 +31,16 @@
 | [zippo会员中心](https://github.com/Sliverkiss/helloworld/blob/main/Study/zippo.js) | 每日任务 | `zippoCookie` |openid#session_key|🟢 |
 
 
+# other
+<details>
+<summary>更新日志</summary>
 
+- 2023-05-18 
+  - 新增STLXZ每日签到任务 by sliverkiss
+  - 新增喜马拉雅每日签到 by sliverkiss
+-  ...
+
+</details> 
 
 # 免责声明
 * 项目内所涉及脚本、LOGO 仅为资源共享、学习参考之目的，不保证其合法性、正当性、准确性；切勿使用项目做任何商业用途或牟利；
