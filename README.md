@@ -21,7 +21,7 @@
 ### 说明
 > 脚本主要用于签到类自动处理
 
-|脚本|内容|变量|说明|状态
+|名称|内容|变量|说明|状态
 |:--------:|:---------:|:-----:|:-----:|:-----:|
 | [米其林会员俱乐部](https://github.com/Sliverkiss/helloworld/blob/main/Study/michelin.js)  | 每周积分任务 | `michelin_data` |Authorization| 🟡 |
 | [挪客会员露营社](https://github.com/Sliverkiss/helloworld/blob/main/Study/naturehike.js) | 日常签到领挪金币 | `naturehikeCookie` |KDTWEAPPSESSIONID=XXX| 🟢 |
