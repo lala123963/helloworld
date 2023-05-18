@@ -1,12 +1,26 @@
 # Loon
-仅用于学习，自用。
-    收集和整理Quantumult脚本并转换成Loon的格式，著作权归原作者所有，不建议引用，禁止fork。
+> 仅用于学习，自用。收集和整理Quantumult脚本并转换成Loon的格式，著作权归原作者所有，不建议引用，禁止fork。
     
 ### boxjs订阅
 * [sliverkiss.boxjs](https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/boxjs/sliverkiss.boxjs.json)  
  
 ### loon脚本订阅
 * [sliverkiss.conf](https://raw.githubusercontent.com/Sliverkiss/helloworld/main//sliverkiss.conf) 
+
+### 说明
+> 脚本主要用于签到类自动处理
+
+|脚本|说明|变量|状态
+|:--------:|:---------:|:-----:|:-----:|
+| [米其林会员俱乐部](https://github.com/Sliverkiss/helloworld/blob/main/Study/michelin.js)  | 每周积分任务 | michelin_data | 🟡 |
+| [挪客会员露营社](https://github.com/Sliverkiss/helloworld/blob/main/Study/naturehike.js) | 日常签到领挪金币 | naturehikeCookie | 🟢 |
+| [STLXZ](https://github.com/Sliverkiss/helloworld/blob/main/Study/stlxz.js) | 每日签到 | stl_cookie | 🟢 |
+| [喜马拉雅](https://github.com/Sliverkiss/helloworld/blob/main/Study/xmly.js) | 每日签到 | xmly_cookie | 🟢 |
+| [元气森林会员中心](https://github.com/Sliverkiss/helloworld/blob/main/Study/yqslhy.js) | 每日签到 | yqslCookie | 🟢 |
+| [zippo会员中心](https://github.com/Sliverkiss/helloworld/blob/main/Study/zippo.js) | 每日任务 | zippoCookie | 🟢 |
+
+
+
 
 # 免责声明
 * 项目内所涉及脚本、LOGO 仅为资源共享、学习参考之目的，不保证其合法性、正当性、准确性；切勿使用项目做任何商业用途或牟利；
