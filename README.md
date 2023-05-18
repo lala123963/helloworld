@@ -3,8 +3,11 @@
     收集和整理Quantumult脚本并转换成Loon的格式，著作权归原作者所有，不建议引用，禁止fork。
     
 ### boxjs订阅
-* [@sliverkiss.boxjs](https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/boxjs/sliverkiss.boxjs.json)  复制链接添加到boxjs订阅
+* [sliverkiss.boxjs](https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/boxjs/sliverkiss.boxjs.json)  
  
+### loon脚本订阅
+* [sliverkiss.conf](https://raw.githubusercontent.com/Sliverkiss/helloworld/main//sliverkiss.conf) 
+
 # 免责声明
 * 项目内所涉及脚本、LOGO 仅为资源共享、学习参考之目的，不保证其合法性、正当性、准确性；切勿使用项目做任何商业用途或牟利；
 
