@@ -59,3 +59,6 @@
 *  [@NobyDa](https://github.com/NobyDa)   
 *  [@wd210010](https://github.com/wd210010)
 *  [@kayanouriko](https://github.com/kayanouriko)
+*  [@leafTheFish](https://github.com/leafTheFish)
+*  [@danchaofan12138](https://github.com/danchaofan12138/)
+*  [@lu0b0](https://github.com/lu0b0)
