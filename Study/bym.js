@@ -9,7 +9,7 @@
  * 只用过loon，理论上支持qx、surge，请自行尝试
  * 
  * [Script]
- * cron "0 15 13 * * MON" script-path=https://raw.githubsercontent.com/Sliverkiss/helloworld/main/Study/bym.js, timeout=300, tag=贝因美贝家商城
+ * cron "0 30 1 * * *" script-path=https://raw.githubsercontent.com/Sliverkiss/helloworld/main/Study/bym.js, timeout=300, tag=贝因美贝家商城
  * 
  */
 
