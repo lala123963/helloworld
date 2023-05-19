@@ -21,3 +21,4 @@ http-request ^https?:\/\/c\.tieba\.baidu\.com\/c\/u\/follow\/getFoldedMessageUse
 
 [MITM]
 hostname = app.bilibili.com, m.bilibili.com, mobile.ximalaya.com, mobwsa.ximalaya.com, mobilehera.ximalaya.com, ngabbs.com, iacc.rec.qq.com, c.tieba.baidu.com, tiebac.baidu.com
+
