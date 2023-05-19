@@ -36,7 +36,9 @@
 # other
 <details>
 <summary>更新日志</summary>
-
+ 
+- 2023-05-19 
+  - 新增贝因美贝家商城每日签到任务 by sliverkiss
 - 2023-05-18 
   - 新增STLXZ每日签到任务 by sliverkiss
   - 新增喜马拉雅每日签到 by sliverkiss
