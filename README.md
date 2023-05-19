@@ -30,6 +30,7 @@
 | [喜马拉雅](https://github.com/Sliverkiss/helloworld/blob/main/Study/xmly.js) | 每日签到 | `xmly_cookie` |1&_token=XXXX;| 🟢 |
 | [元气森林会员中心](https://github.com/Sliverkiss/helloworld/blob/main/Study/yqslhy.js) | 每日签到 | `yqslCookie`|Authorization| 🟢 |
 | [zippo会员中心](https://github.com/Sliverkiss/helloworld/blob/main/Study/zippo.js) | 每日任务 | `zippoCookie` |openid#session_key|🟢 |
+| [贝因美贝家商城](https://github.com/Sliverkiss/helloworld/blob/main/Study/bym.js) | 每日签到 | `bym_cookie` |KDTWEAPPSESSIONID=XXX|🟢 |
 
 
 # other
