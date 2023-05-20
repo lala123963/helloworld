@@ -126,7 +126,7 @@ async function getCustomerPoints(user) {
                 message += `\n🟡帐号[${user.index}]状态查询失败！${result.msg}`
             }
           }catch(e){
-            $.msg($.name,e,'');
+            $.msg($.name,🔴+e,'');
           }finally{
             resolve();
           }
