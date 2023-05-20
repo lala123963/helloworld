@@ -11,7 +11,7 @@
  ![GitHub issues](https://img.shields.io/github/languages/code-size/sliverkiss/helloworld?style=flat-square)
 </div>
 
-> 仅用于学习，自用。收集和整理Quantumult脚本并转换成Loon的格式，著作权归原作者所有，不建议引用，禁止fork。
+> 仅用于学习，自用。收集和整理青龙面板脚本、Quantumult X脚本、使用python语言和go语言开发的脚本等，转换成支持Loon的格式，著作权归原作者所有，不建议引用，禁止fork。
     
 ### boxjs订阅
 * [sliverkiss.boxjs](https://raw.githubusercontent.com/Sliverkiss/helloworld/main/Loon/boxjs/sliverkiss.boxjs.json)  
