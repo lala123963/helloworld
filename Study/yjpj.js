@@ -97,7 +97,7 @@ function checkin(user) {
                 message += `\n🟡帐号[${user.index}]签到失败！${result?.msg}`
             }
           }catch(error){
-            $.msg($.name,🔴+error,'')
+            $.msg($.name,"🔴"+error,'')
           }finally{
             resolve();
           }
@@ -126,7 +126,7 @@ async function getCustomerPoints(user) {
                 message += `\n🟡帐号[${user.index}]状态查询失败！${result.msg}`
             }
           }catch(e){
-            $.msg($.name,🔴+e,'');
+            $.msg($.name,"🔴"+e,'');
           }finally{
             resolve();
           }
