@@ -31,12 +31,14 @@
 | [元气森林会员中心](https://github.com/Sliverkiss/helloworld/blob/main/Study/yqslhy.js) | 每日签到 | `yqslCookie`|Authorization| 🟢 |
 | [zippo会员中心](https://github.com/Sliverkiss/helloworld/blob/main/Study/zippo.js) | 每日任务 | `zippoCookie` |openid#session_key|🟢 |
 | [贝因美贝家商城](https://github.com/Sliverkiss/helloworld/blob/main/Study/bym.js) | 每日签到 | `bym_cookie` |KDTWEAPPSESSIONID=XXX|🟢 |
-
+| [燕京啤酒小程序](https://github.com/Sliverkiss/helloworld/blob/main/Study/yjpj.js) | 每日签到 | `bym_cookie` |KDTWEAPPSESSIONID=XXX|🟢 |
 
 # other
 <details>
 <summary>更新日志</summary>
  
+- 2023-05-20 
+  - 新增燕京啤酒微信小程序每日签到任务 by sliverkiss
 - 2023-05-19 
   - 新增贝因美贝家商城每日签到任务 by sliverkiss
 - 2023-05-18 
