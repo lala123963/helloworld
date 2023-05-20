@@ -18,7 +18,7 @@
  
 ### loon脚本订阅
 * [sliverkiss.conf](https://raw.githubusercontent.com/Sliverkiss/helloworld/main//sliverkiss.conf) 
-
+  
 ### 说明
 > 脚本主要用于签到类自动处理
 
@@ -78,3 +78,4 @@
 *  [@danchaofan12138](https://github.com/danchaofan12138/)
 *  [@lu0b0](https://github.com/lu0b0)
 *  [@ClydeTime](https://github.com/ClydeTime)
+*  [@lliuqi6968](http://github.com/liuqi6968)
