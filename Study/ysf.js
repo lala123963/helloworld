@@ -88,13 +88,13 @@ function signin(user) {
             try {
                 var result = JSON.parse(data);
                 if (result?.signedIn) {
-                    message += `🟢签到成功！已连续签到${result?.signInDays?.days}天`;
+                    message += `\n🟢签到成功！已连续签到${result?.signInDays?.days}天`;
                 } else {
 						console.log(data);
-                    message += `🟡签到失败！${result?.message}`
+                    message += `\n🟡签到失败！${result?.message}`
                 }
             } catch (error) {
-                message += `🔴${result?.message}`;
+                message += `\n🔴${result?.message}`;
                 $.logErr(error)
             } finally {
                 resolve();
