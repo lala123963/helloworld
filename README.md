@@ -33,7 +33,7 @@
 | [贝因美贝家商城](https://github.com/Sliverkiss/helloworld/blob/main/Study/bym.js) | 每日签到 | `bym_cookie` |KDTWEAPPSESSIONID=XXX|🟢 |
 | [燕京啤酒小程序](https://github.com/Sliverkiss/helloworld/blob/main/Study/yjpj.js) | 每日签到 | `yjpj_cookie` |KDTWEAPPSESSIONID=XXX|🟢 |
 | [云闪付](https://github.com/Sliverkiss/helloworld/blob/main/Study/ysf.js) | 每日签到 | `ysf_cookie` |Authorization|🟢 |
-| [嘉立创](https://github.com/Sliverkiss/helloworld/blob/main/Study/jlc.js) | 每日签到 | `jlc_cookie` |lceda_session|🟢 |
+| [嘉立创](https://github.com/Sliverkiss/helloworld/blob/main/Study/jlc.js) | 每日签到 | `jlc_cookie` |lceda_session|🔴 |
 
 # other
 <details>
