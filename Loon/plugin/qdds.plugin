@@ -17,3 +17,4 @@ http-request ^http[s]?:\/\/magev6\.if\.qidian\.com\/argus\/api\/v(2|4)\/(subscri
 [MITM]
 
 hostname = *qidian.com
+
